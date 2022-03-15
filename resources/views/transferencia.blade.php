@@ -24,6 +24,5 @@
     <h1>Sistema de Transferência</h1>
 <h3>Saldo Atual: {{ Auth::user()->carteira }} </h3>
 
-<h3><a href="http://localhost:8000/transferencia">Transferir</a></h3>
 </div>
 @endsection

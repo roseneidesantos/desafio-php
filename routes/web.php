@@ -22,4 +22,9 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('transferencia', function (){
+
+return view('transferencia');
+});
+
 Auth::routes();
