@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/principal.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -45,17 +47,18 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li> -->
                             @endif
-
+                            <div id="transf">
                             <h1>Login</h1>
                             @if (Route::has('register'))
                                 <!-- <li class="nav-item"> -->
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a>
                                 <!-- </li> -->
                             @endif
+                            </div>
                         @else
                             <!-- <li class="nav-item dropdown"> -->
                                 
-
+                             <div id="logado">
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <img src="{!! asset('assets/icon_user2.jpg')!!}"  width='20px' />
 
@@ -73,6 +76,7 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
+                                  </div>
                                 </div>
                             <!-- </li> -->
                         @endguest

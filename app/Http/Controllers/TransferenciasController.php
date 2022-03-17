@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class TransferenciasController extends Controller
 {
-    //
+    public function transferir(Request $request){
+        dd($request->all());
+        
+    }
 }

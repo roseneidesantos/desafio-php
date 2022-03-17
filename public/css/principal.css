@@ -1,0 +1,19 @@
+html, body{
+    background-color: rgb(244, 248, 248);
+    color: black;
+}
+
+#logado{
+    text-align: right;
+    padding: 10px;
+}
+#transf{
+    margin:0 auto;
+    padding: 0 auto;
+    text-align: center;
+    background-color: rgb(244, 248, 248);
+}
+
+h1{
+    text-align: center;
+}
