@@ -6,6 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
+                    <div id="transf">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <div class="row mb-3">
@@ -82,6 +83,7 @@
                             </div>
                         </div>
                     </form>
+</div>
                 </div>
             </div>
         </div>

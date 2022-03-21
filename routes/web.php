@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TransferenciasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +23,12 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('transferencia', function (){
-
-return view('transferencia');
+Route::get('/transferencias', function () {
+    return view('transferencias');
 });
+
+Route::get('/search', 'App\Http\Controllers\UserController@search');
+
+//Route::resource('user', 'UserControllers');
 
 Auth::routes();
