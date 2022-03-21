@@ -29,6 +29,9 @@ Route::get('/transferencias', function () {
 
 Route::get('/search', 'App\Http\Controllers\UserController@search');
 
+Route::get('/confirma_transf', 'App\Http\Controllers\UserController@search');
+
+
 //Route::resource('user', 'UserControllers');
 
 Auth::routes();

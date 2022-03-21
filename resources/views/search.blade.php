@@ -27,10 +27,10 @@
             </tr>
             @endforeach
                 <div class="row mb-3">
+                    <label for="cpf" class="col-md-4 col-form-label text-md-end">{{ __('Valor') }}</label>
                         <div class="col-md-6">
-                        <label for="cpf" class="col-md-4 col-form-label text-md-end">{{ __('Valor') }}</label>
-                            <input id="valor" type="valor" class="form-control @error('valor') is-invalid @enderror" name="valor" required autocomplete="valor" placeholder="R$">
-                                @error('valor')
+                            <input id="cpf" type="cpf" class="form-control @error('cpf') is-invalid @enderror" name="cpf" value="{{ old('cpf') }}" required autocomplete="cpf">
+                                @error('cpf')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -42,13 +42,8 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                
-                            <button type="submit" class="btn btn-primary">
-                                   <a href="http://localhost:8000/transferencias" >Voltar</a>
-                                </button>
-
                                 <button type="submit" class="btn btn-primary">
-                                   Confirmar
+                                    {{ __('Confirmar') }}
                                 </button>
                             </div>
                         </div>

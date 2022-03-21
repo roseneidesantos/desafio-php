@@ -21,7 +21,7 @@
         <h2> R$ {{ Auth::user()->carteira}} </h2> 
         <h5 class="card-title">Transferir para:</h5>
         
-        <form action="{{ url('/search') }}" method="GET">
+        <form action="{{ url('/confirma_transf') }}" method="GET">
             
             <div class="row mb-3">
                             <label for="cpf" class="col-md-4 col-form-label text-md-end">{{ __('CPF') }}</label>
